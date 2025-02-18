@@ -2,19 +2,44 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Menu Builder</title>
-    <script defer src="Java.js"></script>
+    <title>Dynamisch Menu</title>
+    <style>
+        nav {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            width: 250px;
+        }
+        .content {
+            margin-left: 300px;
+        }
+        a {
+            display: block;
+            padding: 5px;
+            text-decoration: none;
+            color: black;
+        }
+        ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+    </style>
 </head>
 <body>
     <nav id="mainMenu"></nav>
     <div class="content">
         <h1>Hoofdstuk 1</h1>
+        <p>Lorem ipsum dolor sit amet...</p>
         <h2>Deel 1.1</h2>
+        <p>Lorem ipsum dolor sit amet...</p>
         <h2>Deel 1.2</h2>
+        <p>Lorem ipsum dolor sit amet...</p>
         <h1>Hoofdstuk 2</h1>
+        <p>Lorem ipsum dolor sit amet...</p>
         <h2>Deel 2.1</h2>
-        <h2>Deel 2.2</h2>
+        <p>Lorem ipsum dolor sit amet...</p>
     </div>
+
+    <script src="Java.js"></script>
 </body>
 </html>

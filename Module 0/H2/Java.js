@@ -1,17 +1,48 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const menu = document.getElementById("mainMenu");
-    document.querySelectorAll(".content h1, .content h2").forEach(header => {
-        if (!header.id) header.id = header.textContent.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9\-]/g, "");
-        let link = document.createElement("a");
-        link.href = "#" + header.id;
-        link.textContent = header.textContent;
-        link.className = header.tagName === "H1" ? "menu-item" : "sub-item";
-        menu.appendChild(link);
-    });
-    menu.addEventListener("click", e => {
-        if (e.target.tagName === "A") {
-            e.preventDefault();
-            document.querySelector(e.target.hash).scrollIntoView({ behavior: "smooth" });
+document.addEventListener('DOMContentLoaded', function() {
+    // Selecteer elementen
+    const nav = document.querySelector('#mainMenu');
+    const content = document.querySelector('.content');
+    
+    // Maak hoofdmenu
+    const menuList = document.createElement('ul');
+    let currentChapterList;
+    
+    // Loop door alle headings
+    Array.from(content.children).forEach(heading => {
+        if (heading.tagName.match(/H[12]/)) {
+            // Maak ID voor de heading
+            heading.id = heading.textContent.toLowerCase().replace(/\s+/g, '-');
+            
+            // Maak menu item
+            const menuItem = document.createElement('li');
+            const link = document.createElement('a');
+            link.href = '#' + heading.id;
+            link.textContent = heading.textContent;
+            
+            if (heading.tagName === 'H1') {
+                // Hoofdstuk
+                const subList = document.createElement('ul');
+                menuItem.appendChild(link);
+                menuItem.appendChild(subList);
+                menuList.appendChild(menuItem);
+                currentChapterList = subList;
+            } else {
+                // Sectie
+                menuItem.appendChild(link);
+                currentChapterList.appendChild(menuItem);
+            }
         }
+    });
+    
+    // Voeg menu toe
+    nav.appendChild(menuList);
+    
+    // Voeg smooth scroll toe
+    nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', e => {
+            e.preventDefault();
+            document.querySelector(link.getAttribute('href'))
+                .scrollIntoView({ behavior: 'smooth' });
+        });
     });
 });
