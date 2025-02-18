@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leerplatform</title>
+</head>
+<body>
+    <div id="learningPlatform">
+        <div id="courses">
+            <h3>Cursussen Beheren</h3>
+            <input type="text" id="courseTitle" placeholder="Cursus titel">
+            <input type="text" id="courseDesc" placeholder="Beschrijving">
+            <button id="addCourse">Toevoegen</button>
+            <button id="clearCourses">Verwijderen</button>
+            <div id="courseList"></div>
+        </div>
+
+        <div id="students">
+            <h3>Studenten Beheren</h3>
+            <input type="text" id="studentName" placeholder="Student naam">
+            <select id="coursePicker"></select>
+            <button id="enrollStudent">Inschrijven</button>
+            <button id="clearStudents">Verwijderen</button>
+            <div id="studentList"></div>
+        </div>
+
+        <div id="grades">
+            <h3>Scores Toekennen</h3>
+            <select id="studentPicker"></select>
+            <select id="modulePicker"></select>
+            <input type="number" id="moduleGrade" placeholder="Score">
+            <button id="addGrade">Score</button>
+            <button id="clearGrades">Verwijderen</button>
+        </div>
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>
