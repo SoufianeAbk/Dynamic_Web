@@ -1,3 +1,4 @@
+"use strict";
 document.getElementById("generateCard").addEventListener("click", function() {
     const name = document.getElementById("recipeName").value.trim();
     const prepTime = document.getElementById("prepTime").value.trim();

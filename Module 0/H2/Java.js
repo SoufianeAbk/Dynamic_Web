@@ -1,3 +1,4 @@
+"use strict";
 document.addEventListener('DOMContentLoaded', function() {
     // Selecteer elementen
     const nav = document.querySelector('#mainMenu');

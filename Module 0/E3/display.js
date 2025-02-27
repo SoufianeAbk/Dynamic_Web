@@ -1,3 +1,4 @@
+"use strict";
 let scores = [];
 
 const scoreInput = document.getElementById('score');

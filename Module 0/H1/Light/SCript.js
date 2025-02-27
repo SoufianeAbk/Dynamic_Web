@@ -1,3 +1,4 @@
+"use strict";
 let donker = false;
 
 function wisselThema() {

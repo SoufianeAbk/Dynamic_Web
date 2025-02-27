@@ -1,3 +1,4 @@
+"use strict";
 document.querySelectorAll('.special').forEach(el => el.style.color = 'red');
 
 document.getElementsByTagName('p')[1].style.textDecoration = 'underline';

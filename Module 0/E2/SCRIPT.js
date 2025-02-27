@@ -1,3 +1,4 @@
+"use strict";
 let naam = prompt("Wat is je naam?");
 let score = 0;
 

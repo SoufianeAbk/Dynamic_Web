@@ -1,3 +1,4 @@
+"use strict";
 const courses = JSON.parse(localStorage.getItem('courses')) || [];
 const students = JSON.parse(localStorage.getItem('students')) || [];
 
