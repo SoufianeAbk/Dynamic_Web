@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Score Tracker</title>
+    <script src="score.js" defer></script>
+</head>
+<body>
+    <h1>Game Score Tracker</h1>
+    <div>
+        <input type="text" id="playerName" placeholder="Speler naam">
+        <input type="number" id="score" placeholder="Score" min="0">
+        <button onclick="voegScoreToe()">Voeg Score Toe</button>
+        <p id="errorMessage" class="error"></p>
+    </div>
+    <div id="scoreBoard">
+        <table>
+            <thead>
+                <tr>
+                    <th>Speler</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody id="scoreList"></tbody>
+        </table>
+    </div>
+</body>
+</html>
