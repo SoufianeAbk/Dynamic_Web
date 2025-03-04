@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    background-color: #007BFF;
+    padding: 10px;
+}
+
+.tab {
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tab.active {
+    background-color: #0056b3;
+    border-radius: 5px;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content.active {
+    display: block;
+}
+
+h2 {
+    color: #333;
+}
+
+.course-list, .student-list, .teacher-list, .enrollment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.course-list div, .student-list div, .teacher-list div, .enrollment-list div {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

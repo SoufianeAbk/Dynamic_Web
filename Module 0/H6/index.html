@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opleidingsbeheer</title>
+    <script defer src="laso.js"></script>
+    <link rel="stylesheet" href="alles.css">
+
+</head>
+<body>
+    <div class="tabs">
+        <div class="tab active" data-tab="courses">Cursussen</div>
+        <div class="tab" data-tab="students">Studenten</div>
+        <div class="tab" data-tab="teachers">Docenten</div>
+        <div class="tab" data-tab="enrollments">Inschrijvingen</div>
+    </div>
+    
+    <div class="tab-content active" id="courses">
+        <h2>Beschikbare Cursussen</h2>
+        <div class="course-list" id="course-list"></div>
+    </div>
+    
+    <div class="tab-content" id="students">
+        <h2>Studenten</h2>
+        <div class="student-list" id="student-list"></div>
+    </div>
+    
+    <div class="tab-content" id="teachers">
+        <h2>Docenten</h2>
+        <div class="teacher-list" id="teacher-list"></div>
+    </div>
+    
+    <div class="tab-content" id="enrollments">
+        <h2>Inschrijvingen</h2>
+        <div class="enrollment-list" id="enrollment-list"></div>
+    </div>
+</body>
+</html>
