@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Timer</title>
+    <link rel="stylesheet" href="banaan.css">
+</head>
+<body>
+    <h1>Promise Timer</h1>
+    
+    <div class="controls">
+        <input type="number" id="seconds" min="1" max="60" value="10" step="1">
+        <button id="startButton">Start Timer</button>
+        <button id="cancelButton" disabled>Annuleer</button>
+    </div>
+
+    <div class="timer" id="timerDisplay">0</div>
+    <div id="message" class="message" style="display: none;"></div>
+
+    <script src="appel.js"></script>
+</body>
+</html>
