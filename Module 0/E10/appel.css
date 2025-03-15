@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#gebruikers-container {
+    margin-top: 20px;
+}
+
+.gebruiker-kaart {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gebruiker-naam {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.gebruiker-email {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.laad-indicator {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+.error-melding {
+    color: red;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
