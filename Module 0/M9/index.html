@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP Status Tester</title>
+    <link rel="stylesheet" href="peer.css">
+</head>
+<body>
+    <h1>HTTP Status Tester</h1>
+    <p>Klik op de verschillende endpoints om HTTP-statussen te testen:</p>
+    
+    <div class="endpoint-lijst">
+        <div class="endpoint-knop" data-code="200">200 OK</div>
+        <div class="endpoint-knop" data-code="301">301 Redirect</div>
+        <div class="endpoint-knop" data-code="404">404 Not Found</div>
+        <div class="endpoint-knop" data-code="500">500 Server Error</div>
+    </div>
+    
+    <div class="resultaat-container">
+        <h3>Resultaat:</h3>
+        <div id="status-info">Selecteer een endpoint om te testen...</div>
+        <pre id="response-details"></pre>
+    </div>
+
+    <script src="hallo.js"></script>
+</body>
+</html>

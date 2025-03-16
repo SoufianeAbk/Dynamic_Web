@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.endpoint-lijst {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.endpoint-knop {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.endpoint-knop:hover {
+    background-color: #ddd;
+}
+
+.resultaat-container {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 20px;
+    background-color: #fafafa;
+}
+
+.status-success {
+    color: green;
+}
+
+.status-redirect {
+    color: orange;
+}
+
+.status-client-error {
+    color: red;
+}
+
+.status-server-error {
+    color: darkred;
+}
