@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weer Dashboard</title>
+    <link rel="stylesheet" href="styli.css">
+</head>
+<body>
+    <h1>Weer Dashboard</h1>
+    <div class="search-box">
+        <input type="text" id="city-input" placeholder="Voer een stadsnaam in...">
+        <button id="search-button">Zoek</button>
+    </div>
+
+    <div id="weather-display"></div>
+    
+    <div id="favorites-container" class="favorites">
+        <h2>Favoriete Locaties</h2>
+        <div id="favorites-list"></div>
+    </div>
+
+    <script type="module" src="scrapi.mjs"></script>
+</body>
+</html>
