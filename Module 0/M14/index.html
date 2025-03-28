@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard</title>
+    <link rel="stylesheet" href="st.css">
+</head>
+<body>
+    <h1>Responsive Dashboard</h1>
+    <p>Probeer de grootte van de container te wijzigen door je browser window te verkleinen.</p>
+
+    <div class="dashboard-container" id="container">
+        <div class="dashboard" id="dashboard" data-columns="3">
+            <div class="card">
+                <h2>Kaart 1</h2>
+                <p>Dashboard informatie...</p>
+            </div>
+            <div class="card">
+                <h2>Kaart 2</h2>
+                <p>Dashboard informatie...</p>
+            </div>
+            <div class="card">
+                <h2>Kaart 3</h2>
+                <p>Dashboard informatie...</p>
+            </div>
+            <div class="card">
+                <h2>Kaart 4</h2>
+                <p>Dashboard informatie...</p>
+            </div>
+            <div class="card">
+                <h2>Kaart 5</h2>
+                <p>Dashboard informatie...</p>
+            </div>
+            <div class="card">
+                <h2>Kaart 6</h2>
+                <p>Dashboard informatie...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-panel">
+        <p>Huidige breedte: <span id="current-width">-</span>px</p>
+        <p>Aantal kolommen: <span id="column-count">3</span></p>
+    </div>
+
+    <script src="resize.js"></script>
+</body>
+</html>
