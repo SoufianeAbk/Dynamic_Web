@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weer App</title>
+    <link rel="stylesheet" href="bouzou.css">
+</head>
+<body>
+    <div class="weather-container">
+        <h1>Weer in jouw omgeving</h1>
+        <button id="getWeather">Haal weersgegevens op</button>
+        <div class="loader" id="loader"></div>
+        <div id="weather-data">
+            <p>Klik op de knop om het weer op te halen.</p>
+        </div>
+        <p id="cached-notice"></p>
+    </div>
+
+    <script src="api.js"></script>
+</body>
+</html>
